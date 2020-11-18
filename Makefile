@@ -2,17 +2,8 @@ gcc_options = -std=c++17 -Wall --pedantic-error -O3
 FILENAME = comp_phys_report_202020190.cpp
 # FILENAME = 2D_Iging.cpp
 
-a.out : $(FILENAME) ./data/heat_bath ./data/metropolis
+a.out : $(FILENAME)
 	g++ $(gcc_options) -o $@ $<
-
-# ./data/heat_bath : ./data
-# 	mkdir ./data/heat_bath
-
-# ./data/metropolis : ./data
-# 	mkdir ./data/metropolis
-
-# ./data :
-# 	mkdir ./data
 
 run : a.out
 	./a.out

@@ -27,8 +27,7 @@ for t in T:
 ax.hist(Energys, bins=33, ec="black", align="left", range=(-100,32), 
 stacked=False, label=labels, rwidth=30)
 
-ax.set_ylabel("number of times", fontsize=21)
-ax.set_xlabel("energy e", fontsize=21)
+
 ax.grid(linestyle="dotted")
 ax.xaxis.set_tick_params(direction='in')
 ax.yaxis.set_tick_params(direction='in')
